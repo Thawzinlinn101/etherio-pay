@@ -20,40 +20,6 @@ const items = [
     },
 ];
 
-// const data = [
-//     {
-//         from: '+959758035929',
-//         amount: '10,000',
-//         transferedAt: '19/02/2022 02:36AM',
-//     },
-//     {
-//         from: '+959758035929',
-//         amount: '60,000',
-//         transferedAt: '19/02/2022 02:36AM',
-//     },
-//     {
-//         from: '+959758035929',
-//         amount: '210,000',
-//         transferedAt: '19/02/2022 02:36AM',
-//     },
-//     {
-//         from: '+959758035929',
-//         amount: '1,000',
-//         transferedAt: '19/02/2022 02:36AM',
-//     },
-//     {
-//         from: '+959758035929',
-//         amount: '4,000',
-//         transferedAt: '19/02/2022 02:36AM',
-//     },
-//     {
-//         from: '+959758035929',
-//         amount: '9,000',
-//         transferedAt: '19/02/2022 02:36AM',
-//     },
-// ];
-
-
 const Received = () => {
     const [data, setData] = useState([]);
     const [page, setPage] = useState(0);
@@ -90,12 +56,6 @@ const Received = () => {
                             <DataTable.Cell style={{ justifyContent: 'center', alignContent: 'center' }}>{new Date(row.createdAt).toLocaleDateString()} {new Date(row.createdAt).toLocaleTimeString()}</DataTable.Cell>
                         </DataTable.Row>
                     ))}
-                    {/* <DataTable.Row>
-                        <DataTable.Cell>+959686983852</DataTable.Cell>
-                        <DataTable.Cell>555,555</DataTable.Cell>
-                        <DataTable.Cell>15/02/2022 12:31PM</DataTable.Cell>
-                    </DataTable.Row> */}
-
                     <DataTable.Pagination
                         page={page}
                         numberOfPages={Math.ceil(items.length / numberOfItemsPerPage)}
@@ -104,9 +64,6 @@ const Received = () => {
                         showFastPaginationControls
                         numberOfItemsPerPageList={numberOfItemsPerPageList}
                         numberOfItemsPerPage={numberOfItemsPerPage}
-                    // onItemsPerPageChange={onItemsPerPageChange}
-                    // selectPageDropdownLabel={'Rows per page'}
-
                     />
                 </DataTable>
                 <View style={{ height: 20 }} />

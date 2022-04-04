@@ -1,28 +1,33 @@
-
-import React from 'react';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { NavigationContainer } from '@react-navigation/native';
-import Transfer from '../Transfer';
+import * as React from 'react';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import Ionicons from 'react-native-vector-icons/Ionicons';
+import SettingsScreen from '../Setting';
 import HomeScreen from '../Home';
-import Profile from '../Profile';
-import Received from '../Received';
-import Transfered from '../Transfered';
 
-const Stack = createNativeStackNavigator();
+const Tab = createBottomTabNavigator();
 
-export default function Navigator(props) {
-    // console.log("tzl -----", props);
-    // props.setShowTabs(true);
+export default function Navigator() {
     return (
-        <NavigationContainer independent={true}>
-            <Stack.Navigator initialRouteName="HomeScreen" screenOptions={{ headerStyle: { backgroundColor: '#e041b1' } }}>
-                <Stack.Screen name="Profile" component={Profile} />
-                <Stack.Screen name="Received" component={Received} />
-                {/* <Stack.Screen name="Transfered" component={() => <Transfered hideBottomTab={() => props.setShowTabs(false)} />} /> */}
-                <Stack.Screen name="Transfered" component={Transfered} options={{ tabBarStyle: { display: "none", } }} />
-                <Stack.Screen name="Transfer" component={Transfer} />
-                <Stack.Screen name="HomeScreen" component={HomeScreen} options={{ headerShown: false }} />
-            </Stack.Navigator>
-        </NavigationContainer>
+        <Tab.Navigator
+            screenOptions={({ route }) => ({
+                tabBarIcon: ({ focused, color, size }) => {
+                    let iconName;
+
+                    if (route.name === 'Home') {
+                        iconName = focused
+                            ? 'ios-home-sharp'
+                            : 'ios-home-outline';
+                    } else if (route.name === 'Settings') {
+                        iconName = focused ? 'ios-list-sharp' : 'ios-list-outline';
+                    }
+                    return <Ionicons name={iconName} size={size} color={color} />;
+                },
+                tabBarActiveTintColor: 'tomato',
+                tabBarInactiveTintColor: 'gray',
+            })}
+        >
+            <Tab.Screen name="Home" component={HomeScreen} options={{ headerShown: false }} />
+            <Tab.Screen name="Settings" component={SettingsScreen} />
+        </Tab.Navigator>
     );
 }

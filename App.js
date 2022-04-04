@@ -1,48 +1,25 @@
-import * as React from 'react';
+import React from 'react';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { NavigationContainer } from '@react-navigation/native';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import Ionicons from 'react-native-vector-icons/Ionicons';
-import NavigateScreen from './src/containers/Navigator';
-import SettingsScreen from './src/containers/Setting';
+import Transfer from '../EtherioPay/src/containers/Transfer';
+import NavigatorScreen from '../EtherioPay/src/containers/Navigator';
+import Profile from '../EtherioPay/src/containers/Profile';
+import Received from '../EtherioPay/src/containers/Received';
+import Transfered from '../EtherioPay/src/containers/Transfered';
 
-const Tab = createBottomTabNavigator();
-
+const Stack = createNativeStackNavigator();
 
 export default function App() {
-  const [showTabs, setShowTabs] = React.useState(true);
-
-  NavigateScreen.prototype.setShowTaps = setShowTabs
 
   return (
     <NavigationContainer>
-      <Tab.Navigator
-        screenOptions={({ route }) => ({
-          tabBarIcon: ({ focused, color, size }) => {
-            let iconName;
-
-            if (route.name === 'Home') {
-              iconName = focused
-                ? 'ios-home-sharp'
-                : 'ios-home-outline';
-            } else if (route.name === 'Settings') {
-              iconName = focused ? 'ios-list-sharp' : 'ios-list-outline';
-            }
-
-            // You can return any component that you like here!
-            return <Ionicons name={iconName} size={size} color={color} />;
-          },
-          tabBarActiveTintColor: 'tomato',
-          tabBarInactiveTintColor: 'gray',
-        })}
-      >
-        <Tab.Screen name="Home" component={() => <NavigateScreen setShowTabs={setShowTabs} />} options={{
-          headerShown: false,
-          tabBarStyle: {
-            display: showTabs ? "flex" : "none",
-          }
-        }} />
-        <Tab.Screen name="Settings" component={SettingsScreen} />
-      </Tab.Navigator>
+      <Stack.Navigator initialRouteName="HomeScreen" screenOptions={{ headerStyle: { backgroundColor: '#e041b1' } }}>
+        <Stack.Screen name="Profile" component={Profile} />
+        <Stack.Screen name="Received" component={Received} />
+        <Stack.Screen name="Transfered" component={Transfered} />
+        <Stack.Screen name="Transfer" component={Transfer} />
+        <Stack.Screen name="HomeScreen" component={NavigatorScreen} options={{ headerShown: false }} />
+      </Stack.Navigator>
     </NavigationContainer>
   );
 }
