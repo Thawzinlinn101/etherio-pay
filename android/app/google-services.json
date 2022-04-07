@@ -1,0 +1,83 @@
+{
+  "project_info": {
+    "project_number": "927983401567",
+    "firebase_url": "https://etherio-pay-default-rtdb.firebaseio.com",
+    "project_id": "etherio-pay",
+    "storage_bucket": "etherio-pay.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:927983401567:android:5cdbd686b85f00f35fb9ea",
+        "android_client_info": {
+          "package_name": "com.etheriopay"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "927983401567-hn4b4f2kr9r8lc6ead9erahdgfpjsonm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCAKkZMpwQHUi-GewyUZqoGgByBaKbWN3Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "927983401567-hn4b4f2kr9r8lc6ead9erahdgfpjsonm.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "927983401567-ojjtrfjjbqg45tnt74s09p1a0j4ppc6e.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "fun.etherio.pay"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:927983401567:android:ee8bf06c882d10825fb9ea",
+        "android_client_info": {
+          "package_name": "fun.etherio.pay"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "927983401567-hn4b4f2kr9r8lc6ead9erahdgfpjsonm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCAKkZMpwQHUi-GewyUZqoGgByBaKbWN3Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "927983401567-hn4b4f2kr9r8lc6ead9erahdgfpjsonm.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "927983401567-ojjtrfjjbqg45tnt74s09p1a0j4ppc6e.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "fun.etherio.pay"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

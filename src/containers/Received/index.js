@@ -29,7 +29,7 @@ const Received = () => {
 
     axios({
         method: 'get',
-        url: 'https://pay.etherio.fun/api/uat/transaction/recieved',
+        url: 'https://pay.etherio.fun/api/transaction/recieved',
     }).then((response) => {
         setData(response.data)
     });

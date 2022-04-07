@@ -12,6 +12,14 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		6A9A7EB927FC3D2200A9B18D /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 6A9A7EB827FC3D2200A9B18D /* FirebaseAnalytics */; };
+		6A9A7EBB27FC3D2200A9B18D /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 6A9A7EBA27FC3D2200A9B18D /* FirebaseAuth */; };
+		6A9A7EBD27FC3D2200A9B18D /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 6A9A7EBC27FC3D2200A9B18D /* FirebaseCrashlytics */; };
+		6A9A7EBF27FC3D2200A9B18D /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 6A9A7EBE27FC3D2200A9B18D /* FirebaseFirestore */; };
+		6A9A7EC127FC3D2200A9B18D /* FirebaseInstallations in Frameworks */ = {isa = PBXBuildFile; productRef = 6A9A7EC027FC3D2200A9B18D /* FirebaseInstallations */; };
+		6A9A7EC327FC3D2200A9B18D /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 6A9A7EC227FC3D2200A9B18D /* FirebaseMessaging */; };
+		6A9A7EC527FC3D2200A9B18D /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 6A9A7EC427FC3D2200A9B18D /* FirebaseStorage */; };
+		6AA9D66727FC4285006A2221 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6AA9D66627FC4285006A2221 /* GoogleService-Info.plist */; };
 		7699B88040F8A987B510C191 /* libPods-EtherioPay-EtherioPayTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-EtherioPay-EtherioPayTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -41,6 +49,7 @@
 		5709B34CF0A7D63546082F79 /* Pods-EtherioPay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EtherioPay.release.xcconfig"; path = "Target Support Files/Pods-EtherioPay/Pods-EtherioPay.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-EtherioPay-EtherioPayTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EtherioPay-EtherioPayTests.debug.xcconfig"; path = "Target Support Files/Pods-EtherioPay-EtherioPayTests/Pods-EtherioPay-EtherioPayTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-EtherioPay.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EtherioPay.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AA9D66627FC4285006A2221 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		6AFAE87D27F5B7AD00B310E0 /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome5_Regular.ttf; sourceTree = "<group>"; };
 		6AFAE87E27F5B7AD00B310E0 /* Ionicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Ionicons.ttf; sourceTree = "<group>"; };
 		6AFAE87F27F5B7AD00B310E0 /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome5_Brands.ttf; sourceTree = "<group>"; };
@@ -75,6 +84,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A9A7EB927FC3D2200A9B18D /* FirebaseAnalytics in Frameworks */,
+				6A9A7EBD27FC3D2200A9B18D /* FirebaseCrashlytics in Frameworks */,
+				6A9A7EC327FC3D2200A9B18D /* FirebaseMessaging in Frameworks */,
+				6A9A7EBB27FC3D2200A9B18D /* FirebaseAuth in Frameworks */,
+				6A9A7EC127FC3D2200A9B18D /* FirebaseInstallations in Frameworks */,
+				6A9A7EC527FC3D2200A9B18D /* FirebaseStorage in Frameworks */,
+				6A9A7EBF27FC3D2200A9B18D /* FirebaseFirestore in Frameworks */,
 				0C80B921A6F3F58F76C31292 /* libPods-EtherioPay.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -155,6 +171,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				6AA9D66627FC4285006A2221 /* GoogleService-Info.plist */,
 				6AFAE87C27F5B74B00B310E0 /* Fonts */,
 				13B07FAE1A68108700A75B9A /* EtherioPay */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
@@ -230,6 +247,15 @@
 			dependencies = (
 			);
 			name = EtherioPay;
+			packageProductDependencies = (
+				6A9A7EB827FC3D2200A9B18D /* FirebaseAnalytics */,
+				6A9A7EBA27FC3D2200A9B18D /* FirebaseAuth */,
+				6A9A7EBC27FC3D2200A9B18D /* FirebaseCrashlytics */,
+				6A9A7EBE27FC3D2200A9B18D /* FirebaseFirestore */,
+				6A9A7EC027FC3D2200A9B18D /* FirebaseInstallations */,
+				6A9A7EC227FC3D2200A9B18D /* FirebaseMessaging */,
+				6A9A7EC427FC3D2200A9B18D /* FirebaseStorage */,
+			);
 			productName = EtherioPay;
 			productReference = 13B07F961A680F5B00A75B9A /* EtherioPay.app */;
 			productType = "com.apple.product-type.application";
@@ -260,6 +286,9 @@
 				Base,
 			);
 			mainGroup = 83CBB9F61A601CBA00E9B192;
+			packageReferences = (
+				6A9A7EB727FC3D2200A9B18D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -284,6 +313,7 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				6AA9D66727FC4285006A2221 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -737,6 +767,55 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6A9A7EB727FC3D2200A9B18D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6A9A7EB827FC3D2200A9B18D /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6A9A7EB727FC3D2200A9B18D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		6A9A7EBA27FC3D2200A9B18D /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6A9A7EB727FC3D2200A9B18D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		6A9A7EBC27FC3D2200A9B18D /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6A9A7EB727FC3D2200A9B18D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		6A9A7EBE27FC3D2200A9B18D /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6A9A7EB727FC3D2200A9B18D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		6A9A7EC027FC3D2200A9B18D /* FirebaseInstallations */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6A9A7EB727FC3D2200A9B18D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseInstallations;
+		};
+		6A9A7EC227FC3D2200A9B18D /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6A9A7EB727FC3D2200A9B18D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		6A9A7EC427FC3D2200A9B18D /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6A9A7EB727FC3D2200A9B18D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 83CBB9F71A601CBA00E9B192 /* Project object */;
 }
